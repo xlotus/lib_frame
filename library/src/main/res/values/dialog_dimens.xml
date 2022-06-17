@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_bg_radius">3dp</dimen>
+    <dimen name="dialog_max_width">506dp</dimen>
+    <dimen name="dialog_margin_horizonal">20dp</dimen>
+    <dimen name="dialog_margin_vertical">60dp</dimen>
+    <dimen name="dialog_content_margin_horizonal">24dp</dimen>
+    <dimen name="dialog_title_margin_top">23dp</dimen>
+    <dimen name="dialog_title_text_size">20sp</dimen>
+    <dimen name="dialog_message_margin_top">6dp</dimen>
+    <dimen name="dialog_message_text_size">16sp</dimen>
+    <dimen name="dialog_button_text_size">14sp</dimen>
+    <dimen name="dialog_button_min_width">64dp</dimen>
+    <dimen name="dialog_button_height">36dp</dimen>
+    <dimen name="dialog_button_margin_top">32dp</dimen>
+    <dimen name="dialog_button_margin_bottom">8dp</dimen>
+    <dimen name="dialog_button_padding_horizontal">8dp</dimen>
+    <dimen name="dialog_button_item_space">8dp</dimen>
+    <dimen name="dialog_button_margin_right">8dp</dimen>
+    <dimen name="dialog_checkbox_margin_right">4dp</dimen>
+    <dimen name="dialog_checkbox_width">15dp</dimen>
+
+</resources>

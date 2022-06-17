@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_dimens_60dp"
+    android:gravity="center"
+    android:paddingBottom="@dimen/common_dimens_8dp">
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_dimens_10dp"
+        android:layout_marginRight="@dimen/common_dimens_10dp"
+        android:drawablePadding="@dimen/common_dimens_4dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical|start"
+        android:maxWidth="@dimen/common_dimens_270dp"
+        android:maxLines="2"
+        android:text="@string/common_tip_loading"
+        android:textColor="#ffbababa"
+        android:textSize="@dimen/common_text_size_12sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/common_dimens_35dp"
+        android:layout_height="@dimen/common_dimens_35dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/common_dimens_35dp" />
+</FrameLayout>

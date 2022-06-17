@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogStyleBg">
+
+    <!-- 18dp + 72dp + 2dp + 68dp = 128dp -->
+
+    <LinearLayout
+        style="@style/DialogStyle">
+
+        <include
+            android:id="@+id/title_text"
+            layout="@layout/widget_dialog_title_view" />
+
+        <include
+            android:id="@+id/msg_view"
+            layout="@layout/widget_dialog_msg_view" />
+
+        <ViewStub
+            android:id="@+id/rich_msg_view_stub"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dialog_margin_horizonal"
+            android:layout_marginRight="@dimen/dialog_margin_horizonal"
+            android:layout_weight="1"
+            android:layout="@layout/widget_dialog_rich_msg_view" />
+
+        <ViewStub
+            android:id="@+id/checkbox_view_stub"
+            style="@style/DialogCheckViewStyle"
+            android:layout="@layout/widget_dialog_check_view" />
+
+        <include layout="@layout/dialog_button_operator_layout" />
+    </LinearLayout>
+
+</LinearLayout>

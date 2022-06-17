@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogCheckViewStyle">
+
+    <ImageView
+        android:id="@+id/checkbox"
+        style="@style/DialogCheckboxStyle" />
+
+    <TextView
+        android:id="@+id/checkinfo"
+        style="@style/DialogCheckInfoStyle"
+        android:text="@string/common_tip_not_prompt_next_time" />
+</LinearLayout>

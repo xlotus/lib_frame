@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="common_dialog_animstyle">
+        <item name="android:windowEnterAnimation">@anim/common_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/common_dialog_out</item>
+    </style>
+
+    <style name="DialogStyleBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/common_mask_background_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="DialogBottomStyleBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/common_mask_background_color</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="DialogBottomStyle" parent="DialogStyle">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="DialogStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/dialog_max_width</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_margin_horizonal</item>
+        <item name="android:layout_marginRight">@dimen/dialog_margin_horizonal</item>
+        <item name="android:layout_marginTop">@dimen/dialog_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_margin_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/common_dimens_23dp</item>
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DialogNoPaddingStyle" parent="DialogStyle">
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="DialogTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginRight">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginBottom">@dimen/common_dimens_7dp</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:textColor">@color/color_191919</item>
+    </style>
+
+    <style name="DialogMessageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginRight">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginTop">@dimen/dialog_message_margin_top</item>
+        <item name="android:textSize">@dimen/dialog_message_text_size</item>
+        <item name="android:textColor">@color/color_757575</item>
+    </style>
+
+    <style name="DialogScrollStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginRight">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginTop">@dimen/dialog_message_margin_top</item>
+    </style>
+
+    <style name="DialogButtonViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dialog_button_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/dialog_button_margin_right</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_button_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_button_margin_bottom</item>
+    </style>
+
+    <style name="DialogButtonOkStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dialog_button_height</item>
+        <item name="android:minWidth">@dimen/dialog_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/dialog_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/dialog_button_padding_horizontal</item>
+        <item name="android:textSize">@dimen/dialog_button_text_size</item>
+        <item name="android:textColor">@color/common_text_color_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/common_operate_ok</item>
+        <item name="android:background">@drawable/dialog_button_bg</item>
+    </style>
+
+    <style name="DialogButtonCancelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dialog_button_height</item>
+        <item name="android:minWidth">@dimen/dialog_button_min_width</item>
+        <item name="android:textSize">@dimen/dialog_button_text_size</item>
+        <item name="android:textColor">@color/common_text_color_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dialog_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/dialog_button_padding_horizontal</item>
+        <item name="android:text">@string/common_operate_cancel_caps</item>
+        <item name="android:layout_marginRight">@dimen/dialog_button_item_space</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_button_item_space</item>
+        <item name="android:background">@drawable/dialog_button_bg</item>
+    </style>
+
+    <style name="DialogCheckViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginRight">@dimen/dialog_content_margin_horizonal</item>
+        <item name="android:layout_marginTop">@dimen/common_dimens_13dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="DialogCheckboxStyle">
+        <item name="android:layout_width">@dimen/dialog_checkbox_width</item>
+        <item name="android:layout_height">@dimen/dialog_checkbox_width</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_checkbox_margin_right</item>
+        <item name="android:layout_marginRight">@dimen/dialog_checkbox_margin_right</item>
+        <item name="android:src">@drawable/common_square_checkbox</item>
+    </style>
+
+    <style name="DialogCheckInfoStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/common_text_size_13sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="DialogRadioImgStyle">
+        <item name="android:layout_width">@dimen/common_dimens_24dp</item>
+        <item name="android:layout_height">@dimen/common_dimens_24dp</item>
+        <item name="android:layout_marginTop">@dimen/common_dimens_14dp</item>
+        <item name="android:layout_marginRight">@dimen/common_dimens_24dp</item>
+        <item name="android:layout_marginEnd">@dimen/common_dimens_24dp</item>
+        <item name="android:padding">@dimen/common_dimens_3dp</item>
+        <item name="android:src">@drawable/common_radio_btn</item>
+    </style>
+
+    <style name="DialogRadioTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dialog_message_text_size</item>
+        <item name="android:layout_marginTop">@dimen/common_dimens_14dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimens_50dp</item>
+        <item name="android:layout_marginStart">@dimen/common_dimens_50dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_191919</item>
+    </style>
+
+</resources>

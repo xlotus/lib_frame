@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_button_height">@dimen/common_dimens_36dp</dimen>
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/common_text_size_14sp</item>
+        <item name="android:layout_height">@dimen/common_button_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SingleMediumButtonStyle" parent="ButtonStyle">
+        <item name="android:minWidth">@dimen/common_dimens_190dp</item>
+        <item name="android:textColor">@color/common_text_color_white</item>
+        <item name="android:background">@drawable/common_capsule_button_filled_orange</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimens_50dp</item>
+        <item name="android:layout_marginRight">@dimen/common_dimens_50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="OperateButtonStyle">
+        <item name="android:textSize">@dimen/common_text_size_11sp</item>
+        <item name="android:layout_height">@dimen/common_dimens_25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/common_dimens_70dp</item>
+        <item name="android:paddingLeft">@dimen/common_dimens_12dp</item>
+        <item name="android:paddingRight">@dimen/common_dimens_12dp</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="OperateFilledButtonStyle" parent="OperateButtonStyle">
+        <item name="android:textColor">@color/common_text_color_white</item>
+        <item name="android:background">@drawable/common_capsule_button_filled_blue</item>
+    </style>
+
+</resources>

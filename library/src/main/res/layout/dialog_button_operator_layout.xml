@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/operate_view"
+    style="@style/DialogButtonViewStyle" >
+
+    <com.xlotus.lib.frame.widget.UpperCaseButton
+        android:id="@+id/quit_cancel"
+        style="@style/DialogButtonCancelStyle" />
+
+    <com.xlotus.lib.frame.widget.UpperCaseButton
+        android:id="@+id/quit_ok"
+        style="@style/DialogButtonOkStyle" />
+
+</LinearLayout>
