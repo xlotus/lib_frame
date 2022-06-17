@@ -2,9 +2,9 @@
 <resources>
     <dimen name="dialog_bg_radius">3dp</dimen>
     <dimen name="dialog_max_width">506dp</dimen>
-    <dimen name="dialog_margin_horizonal">20dp</dimen>
+    <dimen name="dialog_margin_horizontal">20dp</dimen>
     <dimen name="dialog_margin_vertical">60dp</dimen>
-    <dimen name="dialog_content_margin_horizonal">24dp</dimen>
+    <dimen name="dialog_content_margin_horizontal">24dp</dimen>
     <dimen name="dialog_title_margin_top">23dp</dimen>
     <dimen name="dialog_title_text_size">20sp</dimen>
     <dimen name="dialog_message_margin_top">6dp</dimen>

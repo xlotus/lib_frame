@@ -19,8 +19,8 @@
             android:id="@+id/rich_msg_view_stub"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/dialog_margin_horizonal"
-            android:layout_marginRight="@dimen/dialog_margin_horizonal"
+            android:layout_marginLeft="@dimen/dialog_margin_horizontal"
+            android:layout_marginRight="@dimen/dialog_margin_horizontal"
             android:layout_weight="1"
             android:layout="@layout/widget_dialog_rich_msg_view" />
 
