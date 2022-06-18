@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import com.xlotus.lib.core.Logger;
-import com.xlotus.lib.frame.holder.BindingViewHolder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -131,13 +130,6 @@ public class ImpressionTracker {
         mVisibilityTracker.removeView(view);
     }
 
-    public void forceRecordImpression(BindingViewHolder<?, ?> holder) {
-        if (holder.isSupportImpTracker() && !holder.isImpressionRecorded()) {
-            holder.recordImpression(holder.itemView);
-            holder.setImpressionRecorded();
-            removeView(holder.itemView);
-        }
-    }
 
     public void pauseTrack() {
         Logger.i(TAG, "pauseTrack");

@@ -3,15 +3,17 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 31
+    buildToolsVersion "31.0.0"
 
     defaultConfig {
         applicationId "com.xlotus.lib.frame.demo"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 10000
         versionName "1.0.0"
 
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -25,9 +27,15 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+        disable 'ValidFragment'
+        disable 'MissingTranslation'
+    }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     buildFeatures {
