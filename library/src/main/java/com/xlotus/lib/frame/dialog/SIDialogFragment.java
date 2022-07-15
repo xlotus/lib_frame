@@ -34,9 +34,25 @@ public abstract class SIDialogFragment<F extends BaseDialogBuilder<F>, C extends
             dismiss();
             return null;
         }
-        View root = inflater.inflate(getDialogLayout(), container, false);
-        mController.updateView(root);
-        return root;
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    protected int getLayoutResId() {
+        if (mController != null) {
+            return mController.getDialogLayout();
+        }
+        return 0;
+    }
+
+    @Override
+    protected void initView(View parent) {
+        mController.updateView(parent);
+    }
+
+    @Override
+    protected void initData() {
+
     }
 
     @Override

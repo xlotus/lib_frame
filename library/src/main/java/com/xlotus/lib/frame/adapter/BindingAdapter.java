@@ -1,5 +1,6 @@
 package com.xlotus.lib.frame.adapter;
 
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -38,7 +39,7 @@ public abstract class BindingAdapter<T, VB extends ViewBinding> extends BaseRecy
         holder.setOnHolderItemClickListener(new OnHolderEventListener<T>() {
             @Override
             public void onItemClick(BaseRecyclerViewHolder<T> holder) {
-                onItemCLick(holder.getBasePosition());
+                onItemCLick(holder.getBasePosition(), holder.itemView);
             }
 
             @Override
@@ -61,7 +62,7 @@ public abstract class BindingAdapter<T, VB extends ViewBinding> extends BaseRecy
         onBindViewHolder2(holder, position);
     }
 
-    public void onItemCLick(int position) {
+    public void onItemCLick(int position, View itemView) {
 
     }
 
