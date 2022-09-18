@@ -22,6 +22,7 @@ public class FrameTitleActivity extends BindingTitleActivity<ActivityTitleDemoBi
         super.onCreate(savedInstanceState);
         setTitleText(R.string.app_name);
         binding.btnTest.setOnClickListener(this);
+        showLoading("连接中");
     }
 
     @Override

@@ -91,6 +91,13 @@ public abstract class BaseActivity extends FragmentActivity implements ILoading,
     }
 
     @Override
+    public void showLoading(String text) {
+        if (loadingManager != null) {
+            loadingManager.show(text);
+        }
+    }
+
+    @Override
     public void hideLoading() {
         if (loadingManager != null) {
             loadingManager.hide(null);

@@ -201,9 +201,4 @@ public class LoadingDialog extends Dialog {
         loadingTextView = (TextView) findViewById(R.id.loading_textView);
     }
 
-
-    @Override
-    public void onBackPressed() {
-
-    }
 }
